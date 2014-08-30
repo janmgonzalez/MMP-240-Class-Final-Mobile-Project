@@ -1,0 +1,291 @@
+#nav {
+    padding: 1.250em;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+
+    ul {
+    display: none;
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+    margin-bottom: 0;
+
+        &.expanded {
+            display: block;
+        }
+    } //end ul
+
+
+}//end nav
+
+#nav li a {
+    display: block;
+    padding: 0.625em 0;
+    border-top: 0.063em solid #666;
+    font-size: 1.2em;
+    color: #ccc;
+    text-decoration: none;}
+
+.menu_button {
+    display: block;
+    text-align: right;
+    color: #ffc;
+    text-decoration: none;}
+
+.menu_button:hover {
+    color: #58cbdb;
+    text-decoration: none;}
+
+/* sessions page mini navigation 
+*---------------------------------------*/
+
+
+.buttongroup1 {margin-left: 40px;}
+.button1 a{text-decoration: none; }
+.button2 a{text-decoration: none; }
+.button3 a{text-decoration: none; }
+.button4 a{text-decoration: none; }
+.buttongroup1 li{list-style: none;}
+
+/*code from button generator http://www.bestcssbuttongenerator.com/*/
+    .backTop {
+        
+        -moz-box-shadow:inset 0px -3px 7px 0px #bcb9bf;
+        -webkit-box-shadow:inset 0px -3px 7px 0px #bcb9bf;
+        box-shadow:inset 0px -3px 7px 0px #bcb9bf;
+        
+        background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #e6dfed), color-stop(1, #cbc7cf));
+        background:-moz-linear-gradient(top, #e6dfed 5%, #cbc7cf 100%);
+        background:-webkit-linear-gradient(top, #e6dfed 5%, #cbc7cf 100%);
+        background:-o-linear-gradient(top, #e6dfed 5%, #cbc7cf 100%);
+        background:-ms-linear-gradient(top, #e6dfed 5%, #cbc7cf 100%);
+        background:linear-gradient(to bottom, #e6dfed 5%, #cbc7cf 100%);
+        filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#e6dfed', endColorstr='#cbc7cf',GradientType=0);
+        
+        background-color:#e6dfed;
+        
+        -moz-border-radius:3px;
+        -webkit-border-radius:3px;
+        border-radius:3px;
+        
+        border:1px solid #ffffff;
+        
+        display:inline-block;
+        color:#000000;
+        font-family:arial;
+        font-size:15px;
+        font-weight:normal;
+        padding:9px 23px;
+        text-decoration:none;
+        
+        text-shadow:0px 1px 0px #d9d9d9;
+        
+    }
+    .backTop:hover {
+        
+        background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #cbc7cf), color-stop(1, #e6dfed));
+        background:-moz-linear-gradient(top, #cbc7cf 5%, #e6dfed 100%);
+        background:-webkit-linear-gradient(top, #cbc7cf 5%, #e6dfed 100%);
+        background:-o-linear-gradient(top, #cbc7cf 5%, #e6dfed 100%);
+        background:-ms-linear-gradient(top, #cbc7cf 5%, #e6dfed 100%);
+        background:linear-gradient(to bottom, #cbc7cf 5%, #e6dfed 100%);
+        filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#cbc7cf', endColorstr='#e6dfed',GradientType=0);
+        
+        background-color:#cbc7cf;
+    }
+    .backTop:active {
+        position:relative;
+        top:1px;
+    }
+
+   
+
+    .button1 {
+        
+        -moz-box-shadow:inset 0em 0em 0em 0em #f5f5f5;
+        -webkit-box-shadow:inset 0em 0em 0em 0em #f5f5f5;
+        box-shadow:inset 0em 0em 0em 0em #f5f5f5;
+        
+        background-color:#7277D8;
+        
+        -moz-border-radius:0em;
+        -webkit-border-radius:0em;
+        border-radius:0em;
+        
+        border: 0em solid #525252;
+        
+        width: 85%; height: 1.875em;
+        display:inline-block;
+        color:#000000;
+        font-family:arial;
+        font-size:1.250em;
+        font-weight:bold;
+
+       
+        text-decoration:none;
+        text-align: center;
+
+        
+    }
+    .button1:hover {
+        
+        background-color:#a3a3a3;
+    }
+    .button1:active {
+        position:relative;
+        top:1px;
+    }
+
+
+
+
+    .button2 {
+        
+        -moz-box-shadow:inset 0em 0em 0em 0em #f5f5f5;
+        -webkit-box-shadow:inset 0em 0em 0em 0em #f5f5f5;
+        box-shadow:inset 0em 0em 0em 0em #f5f5f5;
+        
+        background-color: #FFDA73;
+        
+        -moz-border-radius:0em;
+        -webkit-border-radius:0em;
+        border-radius:0em;
+        
+        border: 0em solid #525252;
+        
+        width: 85%; height: 1.875em;
+        display:inline-block;
+        color:#000000;
+        font-family:arial;
+        font-size:1.250em;
+        font-weight:bold;
+       
+        text-decoration:none;
+        text-align: center;
+
+        
+    }
+    .button2:hover {
+        
+        background-color:#a3a3a3;
+    }
+    .button2:active {
+        position:relative;
+        top:1px;
+    }
+
+
+
+    .button3 {
+        
+        -moz-box-shadow:inset 0em 0em 0em 0em #f5f5f5;
+        -webkit-box-shadow:inset 0em 0em 0em 0em #f5f5f5;
+        box-shadow:inset 0em 0em 0em 0em #f5f5f5;
+        
+        background-color:#9CEF6C;
+        
+        -moz-border-radius:0em;
+        -webkit-border-radius:0em;
+        border-radius:0em;
+        
+        border: 0em solid #525252;
+        
+        width: 85%; height: 1.875em;
+        display:inline-block;
+        color:#000000;
+        font-family:arial;
+        font-size:1.250em;
+        font-weight:bold;
+       
+        text-decoration:none;
+        text-align: center;
+
+        
+    }
+    .button3:hover {
+        
+        background-color:#a3a3a3;
+    }
+    .button3:active {
+        position:relative;
+        top:1px;
+    }
+
+
+
+
+    .button4 {
+        
+        -moz-box-shadow:inset 0em 0em 0em 0em #f5f5f5;
+        -webkit-box-shadow:inset 0em 0em 0em 0em #f5f5f5;
+        box-shadow:inset 0em 0em 0em 0em #f5f5f5;
+        
+        background-color:#B02C4B;
+        
+        -moz-border-radius:0em;
+        -webkit-border-radius:0em;
+        border-radius:0em;
+        
+        border: 0em solid #525252;
+        
+        width: 85%; height: 1.875em;
+        display:inline-block;
+        color:#000000;
+        font-family:arial;
+        font-size:1.250em;
+        font-weight:bold;
+       
+        text-decoration:none;
+        text-align: center;
+
+        
+    }
+    .button4:hover {
+        
+        background-color:#a3a3a3;
+    }
+    .button4:active {
+        position:relative;
+        top:1px;
+    }
+
+
+/* end of navigation 
+*---------------------------------------*/
+#miniNav{
+    @include breakpoint(mid){
+        display: none;
+    }
+}
+
+.backTop{
+    @include breakpoint(mid){
+        display: none;
+    }
+}
+
+#nav{
+    @include breakpoint(mid){
+        padding: 0;
+
+        .menu_button{display:none;}
+
+        #navList{
+            @include breakpoint(mid){
+            display: inline;
+            }
+        }
+
+        #navList li{
+            @include breakpoint(mid){
+            display: inline-block;
+            padding: 0 $gutter; //10px
+            }
+
+            @include breakpoint(big){
+                font-size: 1.250em;
+            }
+        }
+    }
+}

@@ -1,0 +1,1309 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* line 18, F:/MMP 240-001Web Design/mobile project/sass/_styleResetsheet.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 28, F:/MMP 240-001Web Design/mobile project/sass/_styleResetsheet.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 31, F:/MMP 240-001Web Design/mobile project/sass/_styleResetsheet.scss */
+body {
+  line-height: 1;
+}
+
+/* line 34, F:/MMP 240-001Web Design/mobile project/sass/_styleResetsheet.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 37, F:/MMP 240-001Web Design/mobile project/sass/_styleResetsheet.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 41, F:/MMP 240-001Web Design/mobile project/sass/_styleResetsheet.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 45, F:/MMP 240-001Web Design/mobile project/sass/_styleResetsheet.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 21, F:/MMP 240-001Web Design/mobile project/sass/_base.scss */
+body {
+  background: url("../images/black1926.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+@media (min-width: 56.25em) {
+  /* line 21, F:/MMP 240-001Web Design/mobile project/sass/_base.scss */
+  body {
+    width: 80%;
+    margin: auto;
+    /*background:url("../images/black1926.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; */
+  }
+}
+
+/* apply a natural box layout model to all elements */
+/* line 41, F:/MMP 240-001Web Design/mobile project/sass/_base.scss */
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 45, F:/MMP 240-001Web Design/mobile project/sass/_base.scss */
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  padding-bottom: 0.313em;
+}
+
+/* line 47, F:/MMP 240-001Web Design/mobile project/sass/_base.scss */
+img {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+}
+
+/* line 49, F:/MMP 240-001Web Design/mobile project/sass/_base.scss */
+img {
+  -ms-interpolation-mode: bicubic;
+}
+
+/* line 51, F:/MMP 240-001Web Design/mobile project/sass/_base.scss */
+h1, h2, h3 {
+  font-family: 'Arvo', serif;
+  margin-bottom: 0.313em;
+  font-size: 1.125em;
+}
+
+/* line 54, F:/MMP 240-001Web Design/mobile project/sass/_base.scss */
+a {
+  color: #000;
+}
+
+/* line 55, F:/MMP 240-001Web Design/mobile project/sass/_base.scss */
+a:visited {
+  color: #fff;
+}
+
+/* line 57, F:/MMP 240-001Web Design/mobile project/sass/_base.scss */
+.banner {
+  background-image: no-repeat center fixed;
+}
+
+/* line 59, F:/MMP 240-001Web Design/mobile project/sass/_base.scss */
+.wrapper {
+  background-color: #3C3C3C;
+  width: 100%;
+  margin: auto;
+}
+
+/* line 63, F:/MMP 240-001Web Design/mobile project/sass/_base.scss */
+#banner {
+  width: 100%;
+  height: 130px;
+  /*440px / 960px*/
+  margin: auto;
+  background-color: blue;
+}
+
+/* line 67, F:/MMP 240-001Web Design/mobile project/sass/_base.scss */
+.footer {
+  width: 100%;
+  height: 1.875em;
+  margin: auto;
+  font-size: 1.250em;
+  margin-top: 0.625em;
+  background-color: #a2a7a0;
+  position: relative;
+  float: left;
+  padding: 0.313em;
+}
+
+/* line 1, F:/MMP 240-001Web Design/mobile project/sass/_navStyle.scss */
+#nav {
+  padding: 1.250em;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+}
+/* line 7, F:/MMP 240-001Web Design/mobile project/sass/_navStyle.scss */
+#nav ul {
+  display: none;
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+/* line 14, F:/MMP 240-001Web Design/mobile project/sass/_navStyle.scss */
+#nav ul.expanded {
+  display: block;
+}
+
+/* line 22, F:/MMP 240-001Web Design/mobile project/sass/_navStyle.scss */
+#nav li a {
+  display: block;
+  padding: 0.625em 0;
+  border-top: 0.063em solid #666;
+  font-size: 1.2em;
+  color: #ccc;
+  text-decoration: none;
+}
+
+/* line 30, F:/MMP 240-001Web Design/mobile project/sass/_navStyle.scss */
+.menu_button {
+  display: block;
+  text-align: right;
+  color: #ffc;
+  text-decoration: none;
+}
+
+/* line 36, F:/MMP 240-001Web Design/mobile project/sass/_navStyle.scss */
+.menu_button:hover {
+  color: #58cbdb;
+  text-decoration: none;
+}
+
+/* sessions page mini navigation 
+*---------------------------------------*/
+/* line 44, F:/MMP 240-001Web Design/mobile project/sass/_navStyle.scss */
+.buttongroup1 {
+  margin-left: 40px;
+}
+
+/* line 45, F:/MMP 240-001Web Design/mobile project/sass/_navStyle.scss */
+.button1 a {
+  text-decoration: none;
+}
+
+/* line 46, F:/MMP 240-001Web Design/mobile project/sass/_navStyle.scss */
+.button2 a {
+  text-decoration: none;
+}
+
+/* line 47, F:/MMP 240-001Web Design/mobile project/sass/_navStyle.scss */
+.button3 a {
+  text-decoration: none;
+}
+
+/* line 48, F:/MMP 240-001Web Design/mobile project/sass/_navStyle.scss */
+.button4 a {
+  text-decoration: none;
+}
+
+/* line 49, F:/MMP 240-001Web Design/mobile project/sass/_navStyle.scss */
+.buttongroup1 li {
+  list-style: none;
+}
+
+/*code from button generator http://www.bestcssbuttongenerator.com/*/
+/* line 52, F:/MMP 240-001Web Design/mobile project/sass/_navStyle.scss */
+.backTop {
+  -moz-box-shadow: inset 0px -3px 7px 0px #bcb9bf;
+  -webkit-box-shadow: inset 0px -3px 7px 0px #bcb9bf;
+  box-shadow: inset 0px -3px 7px 0px #bcb9bf;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #e6dfed), color-stop(1, #cbc7cf));
+  background: -moz-linear-gradient(top, #e6dfed 5%, #cbc7cf 100%);
+  background: -webkit-linear-gradient(top, #e6dfed 5%, #cbc7cf 100%);
+  background: -o-linear-gradient(top, #e6dfed 5%, #cbc7cf 100%);
+  background: -ms-linear-gradient(top, #e6dfed 5%, #cbc7cf 100%);
+  background: linear-gradient(to bottom, #e6dfed 5%, #cbc7cf 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e6dfed', endColorstr='#cbc7cf',GradientType=0);
+  background-color: #e6dfed;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  border: 1px solid #ffffff;
+  display: inline-block;
+  color: #000000;
+  font-family: arial;
+  font-size: 15px;
+  font-weight: normal;
+  padding: 9px 23px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #d9d9d9;
+}
+
+/* line 85, F:/MMP 240-001Web Design/mobile project/sass/_navStyle.scss */
+.backTop:hover {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #cbc7cf), color-stop(1, #e6dfed));
+  background: -moz-linear-gradient(top, #cbc7cf 5%, #e6dfed 100%);
+  background: -webkit-linear-gradient(top, #cbc7cf 5%, #e6dfed 100%);
+  background: -o-linear-gradient(top, #cbc7cf 5%, #e6dfed 100%);
+  background: -ms-linear-gradient(top, #cbc7cf 5%, #e6dfed 100%);
+  background: linear-gradient(to bottom, #cbc7cf 5%, #e6dfed 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#cbc7cf', endColorstr='#e6dfed',GradientType=0);
+  background-color: #cbc7cf;
+}
+
+/* line 97, F:/MMP 240-001Web Design/mobile project/sass/_navStyle.scss */
+.backTop:active {
+  position: relative;
+  top: 1px;
+}
+
+/* line 104, F:/MMP 240-001Web Design/mobile project/sass/_navStyle.scss */
+.button1 {
+  -moz-box-shadow: inset 0em 0em 0em 0em #f5f5f5;
+  -webkit-box-shadow: inset 0em 0em 0em 0em #f5f5f5;
+  box-shadow: inset 0em 0em 0em 0em #f5f5f5;
+  background-color: #7277D8;
+  -moz-border-radius: 0em;
+  -webkit-border-radius: 0em;
+  border-radius: 0em;
+  border: 0em solid #525252;
+  width: 85%;
+  height: 1.875em;
+  display: inline-block;
+  color: #000000;
+  font-family: arial;
+  font-size: 1.250em;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+}
+
+/* line 131, F:/MMP 240-001Web Design/mobile project/sass/_navStyle.scss */
+.button1:hover {
+  background-color: #a3a3a3;
+}
+
+/* line 135, F:/MMP 240-001Web Design/mobile project/sass/_navStyle.scss */
+.button1:active {
+  position: relative;
+  top: 1px;
+}
+
+/* line 143, F:/MMP 240-001Web Design/mobile project/sass/_navStyle.scss */
+.button2 {
+  -moz-box-shadow: inset 0em 0em 0em 0em #f5f5f5;
+  -webkit-box-shadow: inset 0em 0em 0em 0em #f5f5f5;
+  box-shadow: inset 0em 0em 0em 0em #f5f5f5;
+  background-color: #FFDA73;
+  -moz-border-radius: 0em;
+  -webkit-border-radius: 0em;
+  border-radius: 0em;
+  border: 0em solid #525252;
+  width: 85%;
+  height: 1.875em;
+  display: inline-block;
+  color: #000000;
+  font-family: arial;
+  font-size: 1.250em;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+}
+
+/* line 169, F:/MMP 240-001Web Design/mobile project/sass/_navStyle.scss */
+.button2:hover {
+  background-color: #a3a3a3;
+}
+
+/* line 173, F:/MMP 240-001Web Design/mobile project/sass/_navStyle.scss */
+.button2:active {
+  position: relative;
+  top: 1px;
+}
+
+/* line 180, F:/MMP 240-001Web Design/mobile project/sass/_navStyle.scss */
+.button3 {
+  -moz-box-shadow: inset 0em 0em 0em 0em #f5f5f5;
+  -webkit-box-shadow: inset 0em 0em 0em 0em #f5f5f5;
+  box-shadow: inset 0em 0em 0em 0em #f5f5f5;
+  background-color: #9CEF6C;
+  -moz-border-radius: 0em;
+  -webkit-border-radius: 0em;
+  border-radius: 0em;
+  border: 0em solid #525252;
+  width: 85%;
+  height: 1.875em;
+  display: inline-block;
+  color: #000000;
+  font-family: arial;
+  font-size: 1.250em;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+}
+
+/* line 206, F:/MMP 240-001Web Design/mobile project/sass/_navStyle.scss */
+.button3:hover {
+  background-color: #a3a3a3;
+}
+
+/* line 210, F:/MMP 240-001Web Design/mobile project/sass/_navStyle.scss */
+.button3:active {
+  position: relative;
+  top: 1px;
+}
+
+/* line 218, F:/MMP 240-001Web Design/mobile project/sass/_navStyle.scss */
+.button4 {
+  -moz-box-shadow: inset 0em 0em 0em 0em #f5f5f5;
+  -webkit-box-shadow: inset 0em 0em 0em 0em #f5f5f5;
+  box-shadow: inset 0em 0em 0em 0em #f5f5f5;
+  background-color: #B02C4B;
+  -moz-border-radius: 0em;
+  -webkit-border-radius: 0em;
+  border-radius: 0em;
+  border: 0em solid #525252;
+  width: 85%;
+  height: 1.875em;
+  display: inline-block;
+  color: #000000;
+  font-family: arial;
+  font-size: 1.250em;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+}
+
+/* line 244, F:/MMP 240-001Web Design/mobile project/sass/_navStyle.scss */
+.button4:hover {
+  background-color: #a3a3a3;
+}
+
+/* line 248, F:/MMP 240-001Web Design/mobile project/sass/_navStyle.scss */
+.button4:active {
+  position: relative;
+  top: 1px;
+}
+
+/* end of navigation 
+*---------------------------------------*/
+@media (min-width: 34.375em) {
+  /* line 256, F:/MMP 240-001Web Design/mobile project/sass/_navStyle.scss */
+  #miniNav {
+    display: none;
+  }
+}
+
+@media (min-width: 34.375em) {
+  /* line 262, F:/MMP 240-001Web Design/mobile project/sass/_navStyle.scss */
+  .backTop {
+    display: none;
+  }
+}
+
+@media (min-width: 34.375em) {
+  /* line 268, F:/MMP 240-001Web Design/mobile project/sass/_navStyle.scss */
+  #nav {
+    padding: 0;
+  }
+  /* line 272, F:/MMP 240-001Web Design/mobile project/sass/_navStyle.scss */
+  #nav .menu_button {
+    display: none;
+  }
+}
+@media (min-width: 34.375em) and (min-width: 34.375em) {
+  /* line 274, F:/MMP 240-001Web Design/mobile project/sass/_navStyle.scss */
+  #nav #navList {
+    display: inline;
+  }
+}
+@media (min-width: 34.375em) and (min-width: 34.375em) {
+  /* line 280, F:/MMP 240-001Web Design/mobile project/sass/_navStyle.scss */
+  #nav #navList li {
+    display: inline-block;
+    padding: 0 0.625em;
+  }
+}
+@media (min-width: 34.375em) and (min-width: 56.25em) {
+  /* line 280, F:/MMP 240-001Web Design/mobile project/sass/_navStyle.scss */
+  #nav #navList li {
+    font-size: 1.250em;
+  }
+}
+
+/* line 6, F:/MMP 240-001Web Design/mobile project/sass/_index.scss */
+.titleIntro {
+  width: 100%;
+  background-color: #a2a7a0;
+  padding: 0.313em;
+  text-align: center;
+}
+
+/* line 12, F:/MMP 240-001Web Design/mobile project/sass/_index.scss */
+.workshopTracks {
+  width: 100%;
+  background-color: #1921B1;
+  padding: 0%;
+  text-align: left;
+  margin-top: 0.313em;
+  float: left;
+}
+
+/* line 17, F:/MMP 240-001Web Design/mobile project/sass/_index.scss */
+.workshopTracks h2 {
+  color: #bbb;
+  text-align: center;
+  font-size: 1.125em;
+  padding: 0.313em;
+}
+
+/* line 19, F:/MMP 240-001Web Design/mobile project/sass/_index.scss */
+.workshopTracks h3 {
+  text-align: center;
+}
+
+/* line 21, F:/MMP 240-001Web Design/mobile project/sass/_index.scss */
+.creativeWri {
+  background-color: #b02c4b;
+  width: 100%;
+  float: left;
+}
+
+/* line 24, F:/MMP 240-001Web Design/mobile project/sass/_index.scss */
+.fArts {
+  background-color: #ffda73;
+  width: 100%;
+  float: left;
+}
+
+/* line 27, F:/MMP 240-001Web Design/mobile project/sass/_index.scss */
+.perArts {
+  background-color: #9cef6c;
+  width: 100%;
+  float: left;
+}
+
+/* line 30, F:/MMP 240-001Web Design/mobile project/sass/_index.scss */
+.meArts {
+  background-color: #7277d8;
+  width: 100%;
+  float: left;
+}
+
+/* line 33, F:/MMP 240-001Web Design/mobile project/sass/_index.scss */
+.feaSpeakers {
+  background-color: #FFAA00;
+  width: 100%;
+  margin-top: 0.313em;
+  float: left;
+}
+
+/* line 36, F:/MMP 240-001Web Design/mobile project/sass/_index.scss */
+.feaSpeakers h3 {
+  margin-bottom: 0.188em;
+  font-size: 1.000em;
+  text-decoration: dashed;
+}
+
+/* line 40, F:/MMP 240-001Web Design/mobile project/sass/_index.scss */
+.speaker1, .speaker2 {
+  float: left;
+  width: 45%;
+  margin: 0.438em;
+  font-size: 0.938em;
+}
+
+/* line 42, F:/MMP 240-001Web Design/mobile project/sass/_index.scss */
+.locaDate {
+  width: 100%;
+  background-color: #a2a7a0;
+  float: left;
+  margin-top: 0.313em;
+  font-size: 1.250em;
+  padding: 0.500em;
+}
+
+/* line 45, F:/MMP 240-001Web Design/mobile project/sass/_index.scss */
+.locaDate li {
+  list-style: none;
+}
+
+/* line 48, F:/MMP 240-001Web Design/mobile project/sass/_index.scss */
+.googleMaps iframe {
+  width: 100%;
+}
+
+/*
+=====================================================
+end of index*/
+/*================media query===========================*/
+@media (min-width: 34.375em) {
+  /* line 60, F:/MMP 240-001Web Design/mobile project/sass/_index.scss */
+  .titleIntro {
+    width: 100%;
+    font-size: 1.250em;
+    text-align: left;
+  }
+}
+@media (min-width: 56.25em) {
+  /* line 60, F:/MMP 240-001Web Design/mobile project/sass/_index.scss */
+  .titleIntro {
+    font-size: 1.563em;
+    text-align: left;
+  }
+}
+@media (min-width: 34.375em) {
+  /* line 72, F:/MMP 240-001Web Design/mobile project/sass/_index.scss */
+  .titleIntro header {
+    text-align: center;
+  }
+}
+@media (min-width: 56.25em) {
+  /* line 72, F:/MMP 240-001Web Design/mobile project/sass/_index.scss */
+  .titleIntro header {
+    margin-bottom: 0.313em;
+  }
+}
+
+@media (min-width: 34.375em) {
+  /* line 87, F:/MMP 240-001Web Design/mobile project/sass/_index.scss */
+  .workshopTracks .workShop {
+    width: 50%;
+    float: left;
+    padding: 0 0.625em;
+    font-size: 1.250em;
+  }
+}
+@media (min-width: 56.25em) {
+  /* line 87, F:/MMP 240-001Web Design/mobile project/sass/_index.scss */
+  .workshopTracks .workShop {
+    width: 50%;
+    font-size: 1.563em;
+  }
+}
+@media (min-width: 56.25em) {
+  /* line 103, F:/MMP 240-001Web Design/mobile project/sass/_index.scss */
+  .workshopTracks .fArts {
+    float: right;
+  }
+}
+@media (min-width: 56.25em) {
+  /* line 108, F:/MMP 240-001Web Design/mobile project/sass/_index.scss */
+  .workshopTracks .meArts {
+    float: right;
+  }
+}
+
+@media (min-width: 34.375em) {
+  /* line 114, F:/MMP 240-001Web Design/mobile project/sass/_index.scss */
+  .feaSpeakers {
+    font-size: 1.250em;
+  }
+}
+
+@media (min-width: 34.375em) {
+  /* line 123, F:/MMP 240-001Web Design/mobile project/sass/_index.scss */
+  .locaDate .dateandLocation {
+    float: left;
+    clear: both;
+  }
+}
+@media (min-width: 34.375em) {
+  /* line 130, F:/MMP 240-001Web Design/mobile project/sass/_index.scss */
+  .locaDate .googleMaps {
+    float: right;
+    width: 40%;
+  }
+}
+@media (min-width: 56.25em) {
+  /* line 130, F:/MMP 240-001Web Design/mobile project/sass/_index.scss */
+  .locaDate .googleMaps {
+    width: 60%;
+  }
+}
+
+/* line 8, F:/MMP 240-001Web Design/mobile project/sass/_schedule.scss */
+.confeOpen {
+  width: 100%;
+  background-color: #C9CCC8;
+  text-align: left;
+}
+
+/* line 10, F:/MMP 240-001Web Design/mobile project/sass/_schedule.scss */
+.confeOpen ul {
+  padding: 10px;
+}
+
+/* line 12, F:/MMP 240-001Web Design/mobile project/sass/_schedule.scss */
+.sessionOne {
+  width: 100%;
+  background-color: cyan;
+  float: left;
+}
+
+/* line 15, F:/MMP 240-001Web Design/mobile project/sass/_schedule.scss */
+.sessionTime h3 {
+  margin-bottom: 0.0em;
+}
+
+/* line 16, F:/MMP 240-001Web Design/mobile project/sass/_schedule.scss */
+.sessionTime p {
+  margin-bottom: 0.625em;
+}
+
+/* line 19, F:/MMP 240-001Web Design/mobile project/sass/_schedule.scss */
+.sessionOne h2, p {
+  margin-bottom: 0.0em;
+}
+
+/* line 20, F:/MMP 240-001Web Design/mobile project/sass/_schedule.scss */
+.sessionTwo h2, p {
+  margin-bottom: 0.0em;
+  margin-top: 0.125em;
+}
+
+/* line 21, F:/MMP 240-001Web Design/mobile project/sass/_schedule.scss */
+.sessionThree h2, p {
+  margin-bottom: 0.0em;
+  margin-top: 0.125em;
+}
+
+/* line 22, F:/MMP 240-001Web Design/mobile project/sass/_schedule.scss */
+.sessionFour h2, p {
+  margin-bottom: 0.0em;
+  margin-top: 0.125em;
+}
+
+/* line 24, F:/MMP 240-001Web Design/mobile project/sass/_schedule.scss */
+.sessionCW {
+  width: 100%;
+  background-color: #B02C4B;
+  float: left;
+  padding: 0 0.625em;
+}
+
+/* line 27, F:/MMP 240-001Web Design/mobile project/sass/_schedule.scss */
+.sessionFA {
+  width: 100%;
+  background-color: #FFDA73;
+  float: left;
+  padding: 0 0.625em;
+}
+
+/* line 30, F:/MMP 240-001Web Design/mobile project/sass/_schedule.scss */
+.sessionPA {
+  width: 100%;
+  background-color: #9CEF6C;
+  float: left;
+  padding: 0 0.625em;
+}
+
+/* line 33, F:/MMP 240-001Web Design/mobile project/sass/_schedule.scss */
+.sessionMA {
+  width: 100%;
+  background-color: #7277D8;
+  float: left;
+  padding: 0 0.625em;
+}
+
+/* line 37, F:/MMP 240-001Web Design/mobile project/sass/_schedule.scss */
+.sessionTwo, .sessionThree, .sessionFour {
+  width: 100%;
+  background-color: cyan;
+  float: left;
+  margin-top: 0.313em;
+}
+
+/* line 40, F:/MMP 240-001Web Design/mobile project/sass/_schedule.scss */
+.lunchTime {
+  background-color: yellow;
+  width: 100%;
+  float: left;
+  margin-top: 0.313em;
+  text-align: center;
+}
+
+/* line 42, F:/MMP 240-001Web Design/mobile project/sass/_schedule.scss */
+.lunchTime h4 {
+  margin-bottom: 0.0em;
+  margin-top: 0.0em;
+}
+
+/* line 43, F:/MMP 240-001Web Design/mobile project/sass/_schedule.scss */
+.lunchTime p {
+  margin-bottom: 0.125em;
+}
+
+/* line 45, F:/MMP 240-001Web Design/mobile project/sass/_schedule.scss */
+.sessionClose {
+  width: 100%;
+  background-color: #C9CCC8;
+  float: left;
+  margin-top: 0.313em;
+  text-align: center;
+}
+
+/*
+======================================================
+end of schedule page
+*/
+/*======================media query=======================*/
+@media (min-width: 34.375em) {
+  /* line 55, F:/MMP 240-001Web Design/mobile project/sass/_schedule.scss */
+  .confeOpen ul li:nth-child(2) {
+    margin-left: -8.188em;
+  }
+}
+@media (min-width: 34.375em) {
+  /* line 54, F:/MMP 240-001Web Design/mobile project/sass/_schedule.scss */
+  .confeOpen {
+    text-align: center;
+  }
+}
+
+@media (min-width: 34.375em) {
+  /* line 65, F:/MMP 240-001Web Design/mobile project/sass/_schedule.scss */
+  .sessionTwo, .sessionFour {
+    float: right;
+  }
+}
+
+@media (min-width: 34.375em) {
+  /* line 72, F:/MMP 240-001Web Design/mobile project/sass/_schedule.scss */
+  .session {
+    width: 49%;
+    margin: 0.063em;
+    font-size: 1.125em;
+  }
+}
+@media (min-width: 56.25em) {
+  /* line 72, F:/MMP 240-001Web Design/mobile project/sass/_schedule.scss */
+  .session {
+    font-size: 1.250em;
+  }
+}
+
+@media (min-width: 34.375em) {
+  /* line 86, F:/MMP 240-001Web Design/mobile project/sass/_schedule.scss */
+  .lunchTime {
+    margin-top: 0.313em;
+    margin-bottom: 0.313em;
+    font-size: 1.125em;
+  }
+}
+
+@media (min-width: 34.375em) {
+  /* line 96, F:/MMP 240-001Web Design/mobile project/sass/_schedule.scss */
+  .sessionClose p {
+    font-size: 1.125em;
+  }
+}
+
+/*
+==================================================
+Session page
+*/
+/* line 8, F:/MMP 240-001Web Design/mobile project/sass/_session.scss */
+#mainArticle {
+  width: 100%;
+  margin: auto;
+  position: relative;
+}
+
+/* line 12, F:/MMP 240-001Web Design/mobile project/sass/_session.scss */
+.presenters {
+  text-align: right;
+  font-family: 'Arvo', serif;
+  font-size: 1.250em;
+  text-decoration: bold;
+  margin-top: 0.625em;
+}
+
+/* line 17, F:/MMP 240-001Web Design/mobile project/sass/_session.scss */
+.backTop {
+  float: right;
+}
+
+/* line 19, F:/MMP 240-001Web Design/mobile project/sass/_session.scss */
+#mainArticle h2 {
+  font-family: Georgia, serif;
+  font-size: 1.500em;
+  color: red;
+  text-align: center;
+}
+
+/* line 22, F:/MMP 240-001Web Design/mobile project/sass/_session.scss */
+#mainArticle strong {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.063em;
+  color: black;
+}
+
+/* line 25, F:/MMP 240-001Web Design/mobile project/sass/_session.scss */
+.sessions {
+  font-style: italic;
+}
+
+/* line 27, F:/MMP 240-001Web Design/mobile project/sass/_session.scss */
+#mainArticle p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.875em;
+  font-weight: 300;
+}
+
+/* line 30, F:/MMP 240-001Web Design/mobile project/sass/_session.scss */
+#mediaArts {
+  background-color: #7277D8;
+  width: 96.5%;
+  margin: auto;
+  padding: 0.313em;
+  padding-top: 0px;
+}
+
+/* line 34, F:/MMP 240-001Web Design/mobile project/sass/_session.scss */
+#fineArts {
+  background-color: #FFDA73;
+  width: 96.5%;
+  margin: auto;
+  margin-top: 0.625em;
+  padding: 0.313em;
+  padding-top: 0px;
+}
+
+/* line 39, F:/MMP 240-001Web Design/mobile project/sass/_session.scss */
+#performingArts {
+  background-color: #9CEF6C;
+  width: 96.5%;
+  margin: auto;
+  margin-top: 0.625em;
+  padding: 0.313em;
+  padding-top: 0px;
+}
+
+/* line 44, F:/MMP 240-001Web Design/mobile project/sass/_session.scss */
+#creativeWriting {
+  background-color: #B02C4B;
+  width: 96.5%;
+  margin: auto;
+  margin-top: 0.625em;
+  padding: 0.313em;
+  padding-top: 0px;
+}
+
+/*
+====================================================================
+end of session page
+*/
+/*=====================media query=====================*/
+@media (min-width: 34.375em) {
+  /* line 57, F:/MMP 240-001Web Design/mobile project/sass/_session.scss */
+  #mediaArts {
+    float: left;
+    width: 48%;
+    margin: 0.125em;
+    padding: 0 0.625em;
+  }
+}
+@media (min-width: 56.25em) {
+  /* line 57, F:/MMP 240-001Web Design/mobile project/sass/_session.scss */
+  #mediaArts {
+    font-size: 1.063em;
+  }
+}
+
+@media (min-width: 34.375em) {
+  /* line 74, F:/MMP 240-001Web Design/mobile project/sass/_session.scss */
+  #fineArts {
+    float: right;
+    width: 48%;
+    margin: 0.125em;
+    padding: 0 0.625em;
+  }
+}
+@media (min-width: 56.25em) {
+  /* line 74, F:/MMP 240-001Web Design/mobile project/sass/_session.scss */
+  #fineArts {
+    font-size: 1.063em;
+  }
+}
+
+@media (min-width: 34.375em) {
+  /* line 89, F:/MMP 240-001Web Design/mobile project/sass/_session.scss */
+  #performingArts {
+    float: left;
+    width: 48%;
+    margin: 0.125em;
+    padding: 0 0.625em;
+    clear: both;
+  }
+}
+@media (min-width: 56.25em) {
+  /* line 89, F:/MMP 240-001Web Design/mobile project/sass/_session.scss */
+  #performingArts {
+    font-size: 1.063em;
+  }
+}
+
+@media (min-width: 34.375em) {
+  /* line 103, F:/MMP 240-001Web Design/mobile project/sass/_session.scss */
+  #creativeWriting {
+    float: right;
+    width: 48%;
+    margin: 0.125em;
+    padding: 0 0.625em;
+  }
+}
+@media (min-width: 56.25em) {
+  /* line 103, F:/MMP 240-001Web Design/mobile project/sass/_session.scss */
+  #creativeWriting {
+    font-size: 1.063em;
+  }
+}
+
+/*===================== end of media query=====================*/
+/*
+=================================================================
+directions aka information page
+*/
+/* line 6, F:/MMP 240-001Web Design/mobile project/sass/_directions.scss */
+.aboutConfe {
+  width: 100%;
+  background-color: #C9CCC8;
+  float: left;
+  margin-bottom: 0.313em;
+  font-size: 0.938em;
+  text-align: left;
+  padding: 0.313em;
+}
+
+/* line 10, F:/MMP 240-001Web Design/mobile project/sass/_directions.scss */
+.aboutConfe p {
+  margin-bottom: 0.625em;
+}
+
+/* line 11, F:/MMP 240-001Web Design/mobile project/sass/_directions.scss */
+.aboutConfe h2 {
+  font-size: 1.250em;
+}
+
+/* line 14, F:/MMP 240-001Web Design/mobile project/sass/_directions.scss */
+.directions {
+  width: 100%;
+  background-color: #FF7800;
+  float: left;
+  padding-left: 0.313em;
+}
+
+/* line 17, F:/MMP 240-001Web Design/mobile project/sass/_directions.scss */
+.directions p {
+  font-size: 0.938em;
+  padding: 0.625em;
+}
+
+/* line 19, F:/MMP 240-001Web Design/mobile project/sass/_directions.scss */
+.directions h3 {
+  text-decoration: underline;
+  font-size: 1.250em;
+}
+
+/* line 20, F:/MMP 240-001Web Design/mobile project/sass/_directions.scss */
+.directions ul {
+  padding: 0.313em 0.625em;
+}
+
+/* line 21, F:/MMP 240-001Web Design/mobile project/sass/_directions.scss */
+.directions ul li {
+  padding: 0.313em;
+}
+
+/*
+====================================================================
+end of directions aka information
+*/
+@media (min-width: 34.375em) {
+  /* line 28, F:/MMP 240-001Web Design/mobile project/sass/_directions.scss */
+  .googleMapsTwo {
+    float: left;
+    width: 50%;
+  }
+}
+@media (min-width: 56.25em) {
+  /* line 28, F:/MMP 240-001Web Design/mobile project/sass/_directions.scss */
+  .googleMapsTwo {
+    width: 40%;
+    float: right;
+    position: relative;
+    bottom: 43.750em;
+    margin-right: 3.125em;
+  }
+}
+
+/* speakers page====================================================*/
+/* line 4, F:/MMP 240-001Web Design/mobile project/sass/_speakers.scss */
+.header1 {
+  background-color: cyan;
+  text-align: center;
+  font-size: 1.563em;
+  padding: 0.063em;
+}
+
+/* line 7, F:/MMP 240-001Web Design/mobile project/sass/_speakers.scss */
+.speakers1 {
+  float: left;
+  width: 48%;
+  background-color: orange;
+  padding: 0.125em;
+}
+
+/* line 10, F:/MMP 240-001Web Design/mobile project/sass/_speakers.scss */
+.speakers2 {
+  float: right;
+  width: 48%;
+  margin: 0.125em;
+  background-color: orange;
+  padding: 0.125em;
+  margin-right: 0.0em;
+  margin-top: 0em;
+}
+
+/* line 13, F:/MMP 240-001Web Design/mobile project/sass/_speakers.scss */
+.speakers1 h3 {
+  text-align: center;
+  font-size: 1.250em;
+  margin-bottom: 0.125em;
+  margin-top: 0.625em;
+  color: #1a1eb2;
+}
+
+/* line 16, F:/MMP 240-001Web Design/mobile project/sass/_speakers.scss */
+.speakers2 h3 {
+  text-align: center;
+  font-size: 1.250em;
+  margin-bottom: 0.125em;
+  margin-top: 0.625em;
+  color: #1a1eb2;
+}
+
+/* line 19, F:/MMP 240-001Web Design/mobile project/sass/_speakers.scss */
+.speakers1 p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.938em;
+  line-height: 120%;
+  text-align: left;
+}
+
+/* line 22, F:/MMP 240-001Web Design/mobile project/sass/_speakers.scss */
+.speakers2 p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.938em;
+  line-height: 120%;
+  text-align: left;
+}
+
+/* line 25, F:/MMP 240-001Web Design/mobile project/sass/_speakers.scss */
+.speaker {
+  padding: 0.188em;
+}
+
+/* line 27, F:/MMP 240-001Web Design/mobile project/sass/_speakers.scss */
+.speakerButton {
+  float: right;
+  bottom: -16.875em;
+  margin: 0;
+  clear: both;
+}
+
+/* end of speaker page==============================================================*/
+/*=====================media query=====================*/
+@media (min-width: 56.25em) {
+  /* line 37, F:/MMP 240-001Web Design/mobile project/sass/_speakers.scss */
+  .speakers1, .speakers2 {
+    width: 49%;
+    margin-top: 2px;
+    padding: 0 0.625em;
+  }
+}
+
+@media (min-width: 34.375em) {
+  /* line 46, F:/MMP 240-001Web Design/mobile project/sass/_speakers.scss */
+  .speakers1 div:nth-child(n+1) {
+    width: 50%;
+    float: left;
+  }
+}
+
+@media (min-width: 34.375em) {
+  /* line 53, F:/MMP 240-001Web Design/mobile project/sass/_speakers.scss */
+  .speakers2 div:nth-child(n+1) {
+    width: 50%;
+    float: left;
+  }
+}
+
+@media (min-width: 34.375em) {
+  /* line 60, F:/MMP 240-001Web Design/mobile project/sass/_speakers.scss */
+  .lisaMelliger {
+    clear: both;
+  }
+}
+
+@media (min-width: 34.375em) {
+  /* line 66, F:/MMP 240-001Web Design/mobile project/sass/_speakers.scss */
+  .robertZweig {
+    clear: both;
+  }
+}
+@media (min-width: 56.25em) {
+  /* line 66, F:/MMP 240-001Web Design/mobile project/sass/_speakers.scss */
+  .robertZweig {
+    float: left;
+  }
+}
+
+@media (min-width: 34.375em) {
+  /* line 77, F:/MMP 240-001Web Design/mobile project/sass/_speakers.scss */
+  .malcomLinton {
+    clear: both;
+  }
+}
+@media (min-width: 56.25em) {
+  /* line 77, F:/MMP 240-001Web Design/mobile project/sass/_speakers.scss */
+  .malcomLinton {
+    float: left;
+  }
+}
+
+/*===================== end of media query=====================*/
+/*====================================================================
+videos page
+*/
+/* line 5, F:/MMP 240-001Web Design/mobile project/sass/_videos.scss */
+.speakerVideo h3 {
+  text-align: center;
+  padding: 0.313em;
+}
+
+/* line 6, F:/MMP 240-001Web Design/mobile project/sass/_videos.scss */
+.videoHeader {
+  background-color: cyan;
+}
+
+/* line 7, F:/MMP 240-001Web Design/mobile project/sass/_videos.scss */
+.videoHeader h1 {
+  margin-bottom: 0.000em;
+  text-align: center;
+  font-size: 1.250em;
+}
+
+/* line 9, F:/MMP 240-001Web Design/mobile project/sass/_videos.scss */
+.videoHeader p {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0.125em;
+}
+
+/* line 12, F:/MMP 240-001Web Design/mobile project/sass/_videos.scss */
+.videoWrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  /* 16:9 */
+  /* if your video is 4:3 ratio then use the padding-bottom below:*/
+  /*padding-bottom: 75%;*/
+  /* 4:3 */
+  padding-top: 25px;
+  height: 0;
+}
+
+/* line 20, F:/MMP 240-001Web Design/mobile project/sass/_videos.scss */
+.videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 28, F:/MMP 240-001Web Design/mobile project/sass/_videos.scss */
+.speakerVideo h3 {
+  color: red;
+  margin-bottom: 0%;
+}
+
+/*
+====================================================================
+end of videos page
+*/
+@media (min-width: 34.375em) {
+  /* line 35, F:/MMP 240-001Web Design/mobile project/sass/_videos.scss */
+  .video:nth-child(n+1) {
+    float: left;
+    padding: 0 0.625em;
+    width: 50%;
+    margin-top: 15px;
+  }
+}
+
+@media (min-width: 56.25em) {
+  /* line 44, F:/MMP 240-001Web Design/mobile project/sass/_videos.scss */
+  .video:nth-child(n+2) {
+    width: 33.33%;
+  }
+}
+
+/* line 3, F:/MMP 240-001Web Design/mobile project/sass/_aboutMe.scss */
+.introHead {
+  background: #555;
+  width: 100%;
+  height: 100%;
+  height: 3.125em;
+  float: left;
+  color: white;
+  font-size: 1.250em;
+  padding: 0.500em;
+  margin-bottom: 0.938em;
+}
+@media (min-width: 34.375em) {
+  /* line 3, F:/MMP 240-001Web Design/mobile project/sass/_aboutMe.scss */
+  .introHead {
+    font-size: 3.125em;
+  }
+}
+
+/* line 20, F:/MMP 240-001Web Design/mobile project/sass/_aboutMe.scss */
+.description {
+  font-size: 1.063em;
+  margin-top: 20px;
+  background: #333;
+  padding: 0.625em;
+  color: white;
+  float: left;
+  box-shadow: 2px 2px white;
+}
+@media (min-width: 34.375em) {
+  /* line 20, F:/MMP 240-001Web Design/mobile project/sass/_aboutMe.scss */
+  .description {
+    font-size: 1.250em;
+  }
+}

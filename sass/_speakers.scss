@@ -1,0 +1,87 @@
+
+/* speakers page====================================================*/
+
+.header1{background-color: cyan; text-align: center; 
+	font-size:1.563em; padding:0.063em;}
+
+.speakers1{float: left; width: 48%;  
+	background-color: orange; padding: 0.125em; }
+
+.speakers2{float: right; width: 48%; margin: 0.125em; 
+	background-color: orange; padding: 0.125em; margin-right: 0.0em; margin-top: 0em;}
+
+.speakers1 h3 {text-align: center; font-size: 1.250em; 
+	margin-bottom: 0.125em; margin-top: 0.625em; color: #1a1eb2;}
+
+.speakers2 h3 {text-align: center; font-size: 1.250em; 
+	margin-bottom: 0.125em; margin-top: 0.625em; color: #1a1eb2;}
+
+.speakers1 p{font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.938em; line-height: 120%; text-align: left;}
+
+.speakers2 p{font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.938em; line-height: 120%; text-align: left;}
+
+.speaker{padding:0.188em;}
+
+.speakerButton{float:right;
+	
+	bottom:-16.875em;
+	margin: 0;
+	clear:both;}
+/* end of speaker page==============================================================*/
+
+
+/*=====================media query=====================*/
+
+.speakers1, .speakers2{
+	@include breakpoint(big){
+		width: 49%;
+		margin-top:2px;
+		padding:0 $gutter;
+	}
+}
+
+
+.speakers1 div:nth-child(n+1){
+	@include breakpoint(mid){
+		width: 50%;
+		float:left;	
+	}
+}
+
+.speakers2 div:nth-child(n+1){
+	@include breakpoint(mid){
+		width: 50%;
+		float:left;	
+	}
+}
+
+.lisaMelliger{
+	@include breakpoint(mid){
+	clear:both;
+	}
+}
+
+.robertZweig{
+	@include breakpoint(mid){
+		clear: both;
+	}
+
+	@include breakpoint(big){
+		float: left;
+	}
+
+}
+
+.malcomLinton{
+	@include breakpoint(mid){
+		clear: both;
+	}
+
+	@include breakpoint(big){
+		float: left;
+	}
+}
+
+/*===================== end of media query=====================*/

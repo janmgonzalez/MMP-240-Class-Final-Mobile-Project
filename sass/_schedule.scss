@@ -1,0 +1,103 @@
+
+// ======================================================
+// schedule page
+// */
+
+
+
+.confeOpen{width: 100%; background-color: #C9CCC8;
+	text-align: left;}
+.confeOpen ul{padding: 10px;}
+
+.sessionOne{width: 100%; background-color: cyan;
+	float: left;}
+
+.sessionTime h3{ margin-bottom: 0.0em;}
+.sessionTime p{margin-bottom: 0.625em;}
+
+
+.sessionOne h2,p {margin-bottom: 0.0em; }
+.sessionTwo h2,p {margin-bottom: 0.0em; margin-top: 0.125em;}
+.sessionThree h2,p {margin-bottom: 0.0em; margin-top: 0.125em;}
+.sessionFour h2,p {margin-bottom: 0.0em; margin-top: 0.125em;}
+
+.sessionCW{width: 100%; background-color: #B02C4B; float: left;
+	padding:0 $gutter;}
+
+.sessionFA{width: 100%; background-color: #FFDA73; float: left;
+	padding:0 $gutter;}
+
+.sessionPA{width: 100%; background-color: #9CEF6C; float: left;
+	padding:0 $gutter;}
+
+.sessionMA{width: 100%; background-color: #7277D8; float: left; 
+	padding:0 $gutter;}
+
+
+.sessionTwo, .sessionThree , .sessionFour{width: 100%; background-color: cyan;
+	float: left; margin-top: 0.313em;}
+
+.lunchTime{background-color: yellow; width: 100%;
+	float: left;margin-top: 0.313em;text-align: center; }
+.lunchTime h4{margin-bottom: 0.0em; margin-top: 0.0em;} 
+.lunchTime p{margin-bottom: 0.125em;;}
+
+.sessionClose{width: 100%; background-color: #C9CCC8; float: left;
+	margin-top: 0.313em; text-align: center;}
+/*
+======================================================
+end of schedule page
+*/
+
+/*======================media query=======================*/
+
+.confeOpen{
+	ul li:nth-child(2){
+		@include breakpoint(mid){
+			margin-left:-8.188em;
+		}
+	};
+	@include breakpoint(mid){
+		text-align: center;
+	}
+}
+   
+.sessionTwo, .sessionFour{
+	@include breakpoint(mid){
+		float:right;
+	}
+
+}
+
+.session{
+
+	@include breakpoint(mid){
+		width: 49%;
+		margin: 0.063em;//1px
+		font-size: 1.125em;//18px
+	}
+
+	@include breakpoint(big){
+		font-size: 1.250em;//20px
+	}
+
+}
+
+.lunchTime{
+	@include breakpoint(mid){
+		margin-top: 0.313em;//5px
+		margin-bottom: 0.313em;
+		font-size: 1.125em;//18px
+	}
+}
+
+.sessionClose{
+
+	p{
+		@include breakpoint(mid){
+			font-size: 1.125em;
+		}
+	}
+}
+
+// /*======================end of media query=======================

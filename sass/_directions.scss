@@ -1,0 +1,43 @@
+/*
+=================================================================
+directions aka information page
+*/
+
+.aboutConfe{width:100%; background-color: #C9CCC8;
+	float: left; margin-bottom: 0.313em;
+	font-size: 0.938em; text-align: left; padding: 0.313em;}
+
+.aboutConfe p{margin-bottom: 0.625em;}
+.aboutConfe h2{font-size:1.250em;}
+
+
+.directions{width: 100%; background-color: #FF7800; float: left; 
+		padding-left: 0.313em;}
+
+.directions p {font-size: 0.938em; padding: 0.625em; }
+
+.directions h3{text-decoration: underline; font-size: 1.250em;}
+.directions ul{padding:0.313em $gutter;}
+.directions ul li{padding:0.313em;}
+
+/*
+====================================================================
+end of directions aka information
+*/
+
+.googleMapsTwo{
+		
+
+		@include breakpoint(mid){
+			float: left;
+			width: 50%;
+		}
+
+		@include breakpoint(big){
+			width:40%;
+			float: right;
+			position: relative;
+			bottom: 43.750em;
+			margin-right: 3.125em;
+		}
+	}

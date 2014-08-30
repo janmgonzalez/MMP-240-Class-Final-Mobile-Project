@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Home page</title>
+	<link rel="stylesheet" type="text/css" href="../css/stylesMobile.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href='http://fonts.googleapis.com/css?family=Arvo:400italic' rel='stylesheet' type='text/css'>
+	<script src="../lightbox/js/jquery-1.10.2.min.js"></script>
+	<script src="../lightbox/js/lightbox-2.6.min.js"></script>
+	<link href="../lightbox/css/lightbox.css" rel="stylesheet" />
+</head>
+
+<body>
+<div class="wrapper">
+
+	<div class="banner" role="banner"><img src="../images/bmccTextLogo.png"></div>
+	
+	<div id="nav"> <!--navigation example was found at "http://blog.g-design.net/post/42617934013/create-an-accessible-toggle-menu-for-mobile-websites" along with the css and Jvascript creted by Gunther Groenewege . I just had to alter some text to match my needs. I do not claim ownership of this navigation style-->
+		<a class="menu_button" href="#footer_nav" onclick="toggleNav(); return false;">&#9776;  MENU</a>
+		<ul id="navList" role="navigation">
+			<li><a href="../HTMLpages/index.html">Home</a></li>
+			<li><a href="../HTMLpages/schedule.html">Schedule</a></li>
+			<li><a href="../HTMLpages/sessions.html">Sessions</a></li>
+			<li><a href="../HTMLpages/speakers.html">Speakers</a></li>
+			<li><a href="../HTMLpages/videos.html">Videos</a></li>
+			<li><a href="../HTMLpages/directions.html">Information</a></li>
+		</ul>
+	</div>
+
+	<div class="titleIntro">
+		<header><h2>Careers in the Creative Arts</h2></header>
+
+		<p class="introduction">Careers in the Creative Arts is a one day event at BMCC that will give you direct insight into what it takes to be a creative professional from the creatives themselves. Come for free and learn how to make a living at what you love.</p>
+	</div>
+
+	<div class="workshopTracks">
+		<h2>Workshop Tracks</h2>
+    	
+    	<div class="workShop creativeWri">
+    	<a href="sessions.html#creativeWriting"><h3>Creative Writing</h3></a>
+		<p>Whether you write novels, plays, poems, short stories, fiction or non-fiction this is the place for you.</p>
+		</div>
+
+		<div class="workShop fArts">
+		<a href="sessions.html#fineArts"><h3>Fine Arts</h3></a>
+		<p>All starving artists whether you're painters, sculptors, photographers, illustrators or anything else, make your way to this workshop.</p>
+		</div>
+		
+		<div class="workShop perArts">
+		<a href="sessions.html#performingArts"><h3>Performing Arts</h3></a>
+		<p>This is the spot for you if you express your creativity in front of people. Actors, musicians, dancers and theatre people are all welcome.</p>
+		</div>
+
+		<div class="workShop meArts">
+		<a href="sessions.html#mediaArts"><h3>Media Arts</h3></a>
+		<p>It's all about the media. From the silver screen, to magazines, to the mobile web, this is for all filmmakers, graphic designers, animators and web designers.</p>
+		</div>
+	</div>
+
+	<div class="feaSpeakers">
+		<div class="speaker1"><h3>Christopher Stein</h3><a href="../images/ChrisStein.jpg" data-lightbox="speakerIndex"><img src="../images/ChrisSteinThumb.png" alt="ChrisStein"></a><p>Christopher Stein is an Associate Professor in the Media Arts and Technology Department. He teaches a variety of courses, from introductory multimedia to advanced multimedia programming. </p> 
+
+			<a class="readMore" href="speakers.html#readMore">Read more >></a>
+		</div>
+		
+		<div class="speaker2"><h3>Sarah Haviland</h3><a href="../images/SarahHaviland (1).jpg" data-lightbox="speakerIndex"><img src="../images/SarahHavilandThumb.png" alt="SaraHaviland"></a><p>Sarah Haviland is a professor in the Music and Art Department. her sculptures and installations have been exhibited nationally in museums and galleries.  She also creates public art that has been exhibited in public spaces across the country.</p>
+		</div>
+
+		<div class="speaker3 hidden">
+
+		</div>
+	</div>
+
+	<div class="locaDate">
+		<div class="dateandLocation">
+		<h3>Friday, June 14, 2013</h3>
+
+		<h3>Location</h3>
+		<ul>
+			<li>Borough of Manhattan Community College</li>
+			<li>Richard Harris Terrace</li>
+			<li>199 Chambers St.</li>
+			<li>New York, NY 10007</li>
+		</ul>
+		</div>
+
+		<div class="googleMaps">
+		<iframe  height="250" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?q=199+chambers+street&amp;ie=UTF8&amp;hq=&amp;hnear=199+Chambers+St,+New+York,+10007&amp;ll=40.717367,-74.012178&amp;spn=0.01101,0.019054&amp;t=m&amp;z=10&amp;output=embed"></iframe><br /><small><a href="https://maps.google.com/maps?q=199+chambers+street&amp;ie=UTF8&amp;hq=&amp;hnear=199+Chambers+St,+New+York,+10007&amp;ll=40.717367,-74.012178&amp;spn=0.01101,0.019054&amp;t=m&amp;z=17&amp;source=embed" style="color:#0000FF;text-align:left">View on Google Map</a></small>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+	<script type="text/javascript" src="../js/navJS.js"></script>
+
+	<div class="footer">Designed by <a href="aboutMe.html">Jan Gonzalez</a></div>
+	<div style="clear:both;"></div>
+</div>
+</body>
+</html>

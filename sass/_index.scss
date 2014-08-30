@@ -1,0 +1,146 @@
+
+//====================================================
+//index.html style
+
+
+.titleIntro{width: 100%; background-color: #a2a7a0;
+	padding: 0.313em;
+	text-align: center; }
+
+
+
+.workshopTracks{ width: 100%; background-color:#1921B1 ;
+	padding: 0%;
+	text-align: left; margin-top: 0.313em;
+	float: left;}
+
+.workshopTracks h2 {color: #bbb; text-align: center; 
+	font-size: 1.125em; padding: 0.313em;}
+.workshopTracks h3 {text-align: center;}
+
+.creativeWri{background-color: $cWritingColor; 
+	width: 100%;  float: left;}
+
+.fArts{background-color: $fArtsColor; 
+	width: 100%; float: left;}
+
+.perArts{background-color: $perArtsColor; 
+	width: 100%; float: left;}
+
+.meArts{background-color: $meArtsColor; 
+	width: 100%; float: left;}
+
+.feaSpeakers{background-color:#FFAA00; width: 100%; 
+	margin-top: 0.313em; float: left;}
+
+.feaSpeakers h3{margin-bottom: 0.188em; font-size: 1.000em;
+	text-decoration: dashed;}
+
+
+.speaker1, .speaker2 {float: left; width: 45%; margin: 0.438em; font-size: 0.938em;}
+
+.locaDate{width: 100%; background-color: #a2a7a0;
+	float: left; margin-top: 0.313em; font-size:  1.250em; padding:0.500em;}
+
+.locaDate li{list-style: none;}
+
+.googleMaps{
+	iframe{
+				width:100%;
+				
+			}
+}
+
+/*
+=====================================================
+end of index*/
+
+
+/*================media query===========================*/
+.titleIntro{
+	@include breakpoint(mid){
+		width: 100%;
+		font-size: 1.250em;
+		text-align: left;
+	}
+
+	@include breakpoint(big){
+		font-size: 1.563em;
+		text-align: left;
+	}
+
+	header{
+		@include breakpoint(mid){
+			text-align: center; 
+		}
+		@include breakpoint(big){
+			margin-bottom: 0.313em;
+			
+
+		}
+	}
+
+}
+
+.workshopTracks{
+
+	.workShop{
+
+		@include breakpoint(mid){
+			width:50%;
+			float: left;
+			padding:0 $gutter;
+			font-size: 1.250em;//20px
+
+		}//end mid breakpoint
+
+		@include breakpoint(big){
+			width:50%;
+			font-size: 1.563em;// 25px
+		}//end big breakpoint
+	}//end workShop
+
+	.fArts{ @include breakpoint(big){
+		float: right;
+		}
+	}
+
+	.meArts{ @include breakpoint(big){
+		float: right;
+		}//end breakpoint
+	}//end perArts
+}
+
+.feaSpeakers{
+
+	@include breakpoint(mid){
+		font-size: 1.250em;
+	}
+}
+
+.locaDate{
+	
+	.dateandLocation{
+		@include breakpoint(mid){
+			float:left;
+			clear: both;
+		}
+	}
+
+	.googleMaps{
+		@include breakpoint(mid){
+			float:right;
+			width: 40%;
+		}
+
+		@include breakpoint(big){
+			width:60%;
+			
+
+		}
+	}
+
+}
+//
+//=====================================================
+//end of media

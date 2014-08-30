@@ -1,0 +1,118 @@
+/*
+==================================================
+Session page
+*/
+
+
+
+#mainArticle{width: 100%; margin: auto;
+	position: relative;
+	}
+
+.presenters{text-align: right; 
+	font-family: 'Arvo', serif;
+	font-size: 1.250em ; text-decoration: bold; 
+	margin-top: 0.625em;}
+
+.backTop{float: right;}
+
+#mainArticle h2 {font-family: Georgia, serif;
+	font-size: 1.500em; color: red; text-align: center;}
+
+#mainArticle strong {font-family:Arial, Helvetica, sans-serif;
+	font-size: 1.063em; color: black;}
+
+.sessions{font-style: italic;}
+
+#mainArticle p {font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.875em; font-weight: 300;}
+
+#mediaArts{background-color: #7277D8;
+	width: 96.5%; margin: auto;
+	padding: 0.313em; padding-top: 0px;}
+
+#fineArts{background-color: #FFDA73;
+	width: 96.5%; margin: auto;
+	margin-top: 0.625em;
+	padding: 0.313em; padding-top: 0px;}
+
+#performingArts{background-color: #9CEF6C;
+	width: 96.5%; margin: auto;
+	margin-top: 0.625em; 
+	padding: 0.313em; padding-top: 0px}
+
+#creativeWriting{background-color: #B02C4B;
+	width: 96.5%; margin: auto;
+	margin-top: 0.625em; ;
+	padding: 0.313em; padding-top: 0px}
+
+/*
+====================================================================
+end of session page
+*/
+
+
+/*=====================media query=====================*/
+
+#mediaArts{
+	@include breakpoint(mid){
+		float: left;
+		width: 48%;
+		margin: 0.125em;
+		padding:0 $gutter;
+		
+	}
+
+	@include breakpoint(big){
+		font-size: 1.063em; //17px
+	
+		
+		}
+	}
+
+
+#fineArts{
+	@include breakpoint(mid){
+		float: right;
+		width: 48%;
+		margin: 0.125em;
+		padding:0 $gutter;
+
+	}
+
+	@include breakpoint(big){
+		font-size: 1.063em;
+
+	}
+}
+
+#performingArts{
+	@include breakpoint(mid){
+		float: left;
+		width: 48%;
+		margin: 0.125em;
+		padding:0 $gutter;
+		clear:both;
+	}
+
+	@include breakpoint(big){
+		font-size: 1.063em;
+	}
+}
+
+#creativeWriting{
+	@include breakpoint(mid){
+		float: right;
+		width: 48%;
+		margin: 0.125em;
+		padding:0 $gutter;
+	}
+
+	@include breakpoint(big){
+		font-size: 1.063em;
+	}
+}
+
+
+/*===================== end of media query=====================*/
+
